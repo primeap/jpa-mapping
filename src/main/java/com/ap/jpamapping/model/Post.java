@@ -1,9 +1,6 @@
 package com.ap.jpamapping.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.apache.tomcat.jni.Address;
 
 import javax.persistence.*;
@@ -15,6 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Post implements Serializable {
     @EmbeddedId
     private PostKey key;
